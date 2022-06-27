@@ -7,13 +7,13 @@ function TodoItem({text,completed}) {
   return [
     
     <li className={`itemContainer ${completed&& 'itemContainer--active'}`}>
-      <div>
+      <div className='textContainer'>
         <h2 className={`titulo ${completed&& 'titulo--active'}`}>{`${title}...`}</h2>
         <p className='texto'>{text}</p>
       </div>
-      <div>
+      <div className='iconsContainer'>
         <span className={`icon icon-check ${completed && "icon-check--active"}`}></span>
-        <span className='icon icon-delete'>X</span>
+        <span className='icon icon-delete'></span>
       </div>
     </li>,
     <hr className={`${completed&& 'hr--active'}`} />

@@ -9,15 +9,21 @@
 
 }
 
-div{
+.textContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+
+}
+.iconsContainer{
+    display: flex;
+    flex-direction:row;
 
 }
 
 .titulo{
     margin: 0;
     color: #939099;
+    text-transform: capitalize;
 }
 .titulo--active{
     margin: 0;
@@ -47,16 +53,27 @@ hr{
 }
 
 .icon{
-    width: 30px;
+    width: 26px;
+    height: 26px;
+    margin:3px;
 }
 
 .icon-check{
-    position: absolute;
-    width: 26px;
-    height: 26px;
+    position: relative;
     background-image: url("../img/check-grey.svg");
 
 }
 .icon-check--active{
     background-image: url('../img/check-color.svg');
+}
+.icon-delete{
+    position: relative;
+    background-image: url('../img/trash.svg');
+    transition-duration: 0.4s;
+}
+.icon-delete:hover{
+    position: relative;
+    background-image: url('../img/trash-red.svg');
+    transform: rotate(0deg);
+
 }
