@@ -6,7 +6,8 @@ import { TodoList } from './todoList'
 import TodoCounter from './todoCounter'
 
 function AppUI({
-    completedTodos,
+    loading,
+    error,
     totalTodos,
     setSearchValue,
     searchValue,
@@ -28,17 +29,21 @@ function AppUI({
       />
     </header>
     <TodoList>
-      {searchedTodo.map(todo =>
-      <TodoItem 
-        key={todo.text}
-        title={todo.title}
-        text={todo.text}
-        completed={todo.completed}
-        onComplete = {() => completedTodo(todo.text)}
-        onDelete = {() => deletedTodo(todo.text)}
+        {error && <p>Hubo un error cargando las tareas</p>}
+        {loading && <p>Las tareas estan procesando, espere un momento.</p>}
+        {(!loading && !searchedTodo.length) && <p>Crea tu primera tarea</p>}
+        
+        {searchedTodo.map(todo =>
+        <TodoItem 
+            key={todo.text}
+            title={todo.title}
+            text={todo.text}
+            completed={todo.completed}
+            onComplete = {() => completedTodo(todo.text)}
+            onDelete = {() => deletedTodo(todo.text)}
 
-      />
-      )}
+        />
+        )}
     </TodoList>
     <CreateTodoButton/>
   </React.Fragment>

@@ -11,33 +11,60 @@ import AppUI from './Components/AppUI';
 
 function useLocalStorage (itemName, initialValue){
 
-  const todoLocal = localStorage.getItem(itemName);
-  let parsedItem;
+  const [error, setError] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
+  const [item, setItem] = React.useState(initialValue);
 
-  if (!todoLocal) {
-    localStorage.setItem(itemName, JSON.stringify(initialValue));
-    parsedItem = initialValue;
-  } else {
-    parsedItem = JSON.parse(localStorage.getItem(itemName))
-  }
+  React.useEffect(()=>{
+    setTimeout(()=>{
+      try {
+        const todoLocal = localStorage.getItem(itemName);
+      let parsedItem;
 
-  const [item, setItem] = React.useState(parsedItem);
+      if (!todoLocal) {
+        localStorage.setItem(itemName, JSON.stringify(initialValue));
+        parsedItem = initialValue;
+      } else {
+        parsedItem = JSON.parse(localStorage.getItem(itemName))
+      }
+
+      saveItem(parsedItem);
+      setLoading(false);
+      } catch(error) {
+        setError(error)
+      }
+      
+    },2000)
+  })
   
   const saveItem = (newItem) =>{
-    const stringifiedItem = JSON.stringify(newItem);
-    localStorage.setItem(itemName, stringifiedItem);
-    setItem(newItem);
+    try {
+      const stringifiedItem = JSON.stringify(newItem);
+      localStorage.setItem(itemName, stringifiedItem);
+      setItem(newItem); 
+
+    } catch (error) {
+      setError(error)
+    }
   }
 
-  return [
-    item,
-    saveItem
-  ]
+  return {
+      item,
+      saveItem,
+      loading,
+      error
+  }
+
 }
 
 function App() {
 
-  const [todos, saveTodo] = useLocalStorage('TODO_V1', [])
+  const {
+    item: todos, 
+    setItem: saveTodo,
+    loading,
+    error
+  } = useLocalStorage('TODO_V1', [])
   const completedTodo = (text) =>{
     const todoIndex = todos.findIndex(todo=> todo.text === text);
   
@@ -68,14 +95,11 @@ function App() {
   const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos = todos.length;
 
-  React.useEffect(()=>{
-
-  }, todos
-  );
-
   return (
      
     <AppUI
+    error={error}
+    loading = {loading}
     setSearchValue = {setSearchValue}
     searchValue = {searchValue}
     listOfCompleted = {completedTodos}
