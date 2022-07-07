@@ -1,6 +1,11 @@
 import React from 'react'
+import { TodoContext } from '../Context/context';
 
-function TodoCounter({completed, totalTodos}) {
+function TodoCounter() {
+
+  const {
+    completed, totalTodos
+  } = React.useContext(TodoContext);
 
   let todoVerify='';
 
