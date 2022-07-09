@@ -7,7 +7,7 @@ const TodoContext = React.createContext();
 function TodoProvider(props){
     const {
         item: todos, 
-        setItem: saveTodo,
+        saveItem: saveTodo,
         loading,
         error
       } = useLocalStorage('TODO_V1', [])
@@ -16,6 +16,14 @@ function TodoProvider(props){
       
         const newTodos = [...todos];
         newTodos[todoIndex].completed = true;
+        saveTodo(newTodos);
+      }
+      const addTodo = ({title, text}) =>{ 
+        const newTodos = [...todos];
+        newTodos.push(
+          {completed: false,
+          title,
+          text})
         saveTodo(newTodos);
       }
       const deletedTodo = (text) =>{
@@ -41,6 +49,26 @@ function TodoProvider(props){
       const completedTodos = todos.filter(todo => !!todo.completed).length;
       const totalTodos = todos.length;
 
+      //Eventos de los modales
+
+      const [openModal, setOpenModal] = React.useState(false);
+      const [openTodoForm, setOpenTodoForm] = React.useState(false);
+      const [openThemeModal, setOpenThemeModal] = React.useState(false);
+      
+      //Para cerrar el modal con la tecla ESC
+
+      document.addEventListener('keydown', function(event){ 
+        if(event.key === 'Escape'){
+          setOpenModal(false)
+          setOpenTodoForm(false)
+          setOpenThemeModal(false)
+        }
+      })
+      
+      //Cambio de tema
+      const  [colorTheme, setColorTheme] = React.useState("Morado");
+
+
       return (
         <TodoContext.Provider value= {{
             error,
@@ -51,8 +79,17 @@ function TodoProvider(props){
             totalTodos,
             searchedTodo,
             deletedTodo,
+            addTodo,
             completed : completedTodos,
-            completedTodo
+            completedTodo,
+            openModal,
+            setOpenModal,
+            colorTheme,
+            setColorTheme,
+            openTodoForm, 
+            setOpenTodoForm,
+            openThemeModal,
+            setOpenThemeModal
         }}>
             {props.children}
         </TodoContext.Provider>

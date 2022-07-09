@@ -5,31 +5,38 @@ import { TodoItem } from './todoItem'
 import { TodoList } from './todoList'
 import TodoCounter from './todoCounter'
 import { TodoContext } from '../Context/context'
+import Modal from './Modal/index'
+import { TodoForm } from './Modal/TodoForm'
+import LoadingSkeleton from './LoadingSkeleton'
+import {CreateTodoBackground} from './CreateTodoBackground'
+import { ThemeButton } from './ThemeButton'
+import ThemeForm from './Modal/ThemeForm'
 
 function AppUI() {
 
     const {
-        error,
-        loading,
         searchedTodo,
         deletedTodo,
-        completedTodo
+        completedTodo,
+        openModal,
+        loading,
+        colorTheme,
+        openTodoForm,
+        openThemeModal
     } = React.useContext(TodoContext)
 
     return (
         <React.Fragment>
-        <header>
+        <header className={`header_${colorTheme}`}>
             <SearchTodo/>
             <TodoCounter />
         </header>
-            <TodoList>
-                {error && <p>Hubo un error cargando las tareas</p>}
-                {loading && <p>Estamos cargando, no desesperes...</p>}
-                {(!loading && !searchedTodo.length) && <p>Crea tu primera tarea</p>}
-                
+            <TodoList>   
+                {loading && <LoadingSkeleton />}             
+                {(!loading && !searchedTodo.length) && <CreateTodoBackground/>}             
                 {searchedTodo.map(todo =>
                 <TodoItem 
-                    key={todo.text}
+                    key={`${parseInt(Math.random()*1000)}${todo.text}${todo.title}`}
                     title={todo.title}
                     text={todo.text}
                     completed={todo.completed}
@@ -39,7 +46,18 @@ function AppUI() {
                 />
                 )}
             </TodoList>
-        <CreateTodoButton/>
+            {(openModal && openTodoForm) &&
+                <Modal>
+                    <TodoForm/>
+                </Modal>
+            }
+            {(openModal && openThemeModal) &&
+                <Modal>
+                    <ThemeForm/>
+                </Modal>
+            }
+        <ThemeButton/>
+        <CreateTodoButton />
         </React.Fragment>
     )
 }

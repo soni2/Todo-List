@@ -1,0 +1,32 @@
+.createTodoBackground{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0;
+}
+
+.plusSign{
+    width: 60%;
+    height: 300px;
+    color: rgb(216, 216, 216);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.addIcon{
+    background: url('../img/addTodo.svg');
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;    
+}
+
+.addTodoText{
+    margin: 0;
+}

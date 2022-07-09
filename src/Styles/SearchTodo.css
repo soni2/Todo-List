@@ -1,6 +1,11 @@
 .todoInput { 
-    padding: 6px 10px;
-    border-radius: 15px;
-    border: none;
-    width: 50vw;
+    background-color: var(--white);
+    width: 75%;
+    border-radius: 5px;
+    border:none;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+    margin: 12px 0px;
+
 }

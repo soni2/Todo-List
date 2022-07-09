@@ -6,6 +6,7 @@
     border-radius: 0.8vh;
     justify-content: space-between;
     color: var(--grey);
+    margin: 5px 0;
 
 }
 
@@ -33,23 +34,6 @@
 
 .texto{
     margin: 0;
-}
-
-hr{
-    width: 95%;
-    background-color: var(--grey);
-    height: 1px;
-    border: none;
-
-}
-
-.hr--active{
-    width: 95%;
-    background-color: var(--green);
-    height: 3px;
-    border: none;
-    opacity: 10%;
-
 }
 
 .icon{

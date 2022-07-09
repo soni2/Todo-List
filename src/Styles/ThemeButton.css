@@ -1,0 +1,26 @@
+.ThemeButton {
+    width: 6vh;
+    height: 6vh;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 16vh;
+    right: 5vw;
+    background-color: var(--grey);
+    font-size: 1.9rem;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+
+.icon-theme{
+    opacity: 50%;
+    width: 80%;
+    
+}
+.icon-theme:hover{
+    opacity: 80%;
+    transition-duration: 0.4s;
+}
