@@ -15,7 +15,7 @@ function TodoCounter() {
   if (totalTodos !== 0){
     todoVerify = <h1>Tienes <span style={{fontWeight: 'bold'}}>{completed}</span> de <span style={{fontWeight: 'bold'}}>{totalTodos}</span> tareas completadas</h1>;
   } else {
-    todoVerify = <h1>No tienes tareas por hacer, <span style={{fontWeight: 'bold'}}>crea tu primera tarea!</span></h1>
+    todoVerify = <h1>No tienes tareas por hacer, <span style={{fontWeight: 'bold'}}>¡crea tu primera tarea!</span></h1>
   }
 
   return (
