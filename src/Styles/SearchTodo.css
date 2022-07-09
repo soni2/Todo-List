@@ -1,6 +1,7 @@
 .todoInput { 
     background-color: var(--white);
     width: 75%;
+    max-width: 1240px;
     border-radius: 5px;
     border:none;
     font-size: 20px;
