@@ -6,4 +6,5 @@ ul{
     flex-direction: column;
     justify-content: center;
     width: 90%;
+    max-width: 1024px;
 }

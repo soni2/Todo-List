@@ -9,6 +9,23 @@
   }
 }
 
+.AppUIdarkAzul{
+  background-color: rgb(0, 4, 44);
+  min-height: 100vh;
+}
+.AppUIdarkRojo{
+  background-color: var(--darkGrey);
+  min-height: 100vh;
+}
+.AppUIdarkMorado{
+  background-color: blueviolet;
+  min-height: 100vh;
+}
+.AppUIdarkVerde{
+  background-color: blueviolet;
+  min-height: 100vh;
+}
+
 header {
   width: 100%;
   min-height: 3vh;
@@ -17,8 +34,10 @@ header {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: var(--white);
   padding: 15px 0px;
+  transition-duration: 0.4s;
+  color: var(--white)
+
 }
 .header_Azul{
   background: var(--Azul) 
@@ -31,6 +50,10 @@ header {
 }
 .header_Verde{
   background: var(--Verde) 
+}
+.header_Blanco{
+  background: var(--grey);
+  color: var(--darkGrey)
 }
 
 h1 {

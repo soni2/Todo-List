@@ -20,45 +20,85 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    transition-duration: 0.4s
 }
-
-.clearAzul{
-    border: solid 2px blue;
-    background-color: var(--white);
-}
-.clearRojo{
-    border: solid 2px red;
-    background-color: var(--white);
+.themeList:hover{
+    font-weight: bold;
 
 }
-.clearMorado{
-    border: solid 2px purple;
+
+.lightAzul{
+    border: solid 2px var(--blue);
+    background-color: var(--white);
+}
+.lightRojo{
+    border: solid 2px var(--red);
     background-color: var(--white);
 
 }
-.clearVerde{
-    border: solid 2px green;
+.lightMorado{
+    border: solid 2px;
+    border-color: var(--purple);
+    background-color: var(--white);
+
+}
+.lightVerde{
+    border: solid 2px var(--green); 
     background-color: var(--white);
 }
-.clearBlanco{
+
+.lightBlanco{
     border: solid 2px rgb(187, 187, 187);
     background-color: var(--white);
 }
 
+/*hover*/
+.lightAzul:hover{
+    background-color: var(--blue);
+    color: #fff;
+
+}
+
+.lightRojo:hover{
+    background-color: var(--red);
+    color: #fff;
+}
+
+.lightMorado:hover{
+    background-color: var(--purple);
+    color: #fff;
+
+
+}
+
+.lightVerde:hover{
+    background-color: var(--green);
+    color: #fff;
+
+}
+
+.lightBlanco:hover{
+    background-color: rgb(187, 187, 187);
+    color: var(--darkGrey);
+
+
+}
+
+/* dark theme never used */
+
 
 .darkAzul{
-    border: solid 2px blue;
+    border: solid 5px var(--blue);
     background-color: #000;
     color: #fff;
 }
 .darkRojo{
-    border: solid 2px var(--red);
+    border: solid 5px var(--red);
     background-color: #000;
     color: #fff;
 }
 .darkMorado{
-    border: solid 2px purple;
+    border: solid 5px var(--Morado);
     background-color: #000;
     color: #fff;
 

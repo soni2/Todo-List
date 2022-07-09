@@ -1,9 +1,12 @@
 :root{
   --dominant: #0E0741;
-  --purple: #c89af2;
   --white: white;
   --grey: #d7d7d9;
-  --green: #00ce00;
+  --darkGrey: #383838;
+  --blue: rgba(0,22,255,1);
+  --red: rgba(255,0,0,1);
+  --purple: rgba(146,110,220,1);
+  --green: #03C03C;
   --Rojo: linear-gradient(180deg, rgba(228,30,43,1) 0%, rgba(255,0,0,1) 100%);
   --Azul: linear-gradient(180deg, rgba(35,25,208,1) 0%, rgba(0,22,255,1) 100%);
   --Morado: linear-gradient(180deg, rgba(209,126,242,1) 0%, rgba(146,110,220,1) 100%);

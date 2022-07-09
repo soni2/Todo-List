@@ -4,8 +4,11 @@ import '../../Styles/modal.css'
 
 
 function Modal({children}){
+
     return ReactDOM.createPortal (
-    <div className='addTodoModal'>
+    <div 
+    className='addTodoModal'
+    >
         {children}
     </div>,
     document.getElementById("modal"))

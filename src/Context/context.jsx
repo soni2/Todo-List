@@ -66,7 +66,7 @@ function TodoProvider(props){
       })
       
       //Cambio de tema
-      const  [colorTheme, setColorTheme] = React.useState("Morado");
+      const  [colorTheme, setColorTheme] = React.useState({color:"Morado", theme:"light"});
 
 
       return (

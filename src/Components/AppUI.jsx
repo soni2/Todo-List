@@ -27,7 +27,7 @@ function AppUI() {
 
     return (
         <React.Fragment>
-        <header className={`header_${colorTheme}`}>
+        <header className={`header_${colorTheme.color} ${colorTheme.mode}`}>
             <SearchTodo/>
             <TodoCounter />
         </header>
@@ -42,9 +42,9 @@ function AppUI() {
                     completed={todo.completed}
                     onComplete = {() => completedTodo(todo.text)}
                     onDelete = {() => deletedTodo(todo.text)}
-
-                />
-                )}
+                    
+                    />
+                    )}
             </TodoList>
             {(openModal && openTodoForm) &&
                 <Modal>

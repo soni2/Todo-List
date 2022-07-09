@@ -8,7 +8,7 @@ function TodoItem({text, completed, onComplete, onDelete, title}) {
     
     <li className={`itemContainer ${completed&& 'itemContainer--active'}`} key={text}>
       <div className='textContainer'>
-        <h2 className={`titulo ${completed&& 'titulo--active'}`}>{`${title}...`}</h2>
+        <h2 className={`titulo ${completed&& 'titulo--active'}`}>{`${title}`}</h2>
         <p className='texto'>{`${decodingText}`}</p>
       </div>
       <div className='iconsContainer'>

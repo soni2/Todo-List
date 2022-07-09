@@ -2,6 +2,7 @@ import React from 'react'
 import { TodoContext } from '../Context/context';
 import '../Styles/CreateTodoButton.css'
 
+
 function CreateTodoButton() {
 
   const {
@@ -9,6 +10,7 @@ function CreateTodoButton() {
     setOpenTodoForm,
     openTodoForm,
     setOpenThemeModal,
+    colorTheme
   } = React.useContext(TodoContext)
 
   function toOpenModal(){
@@ -17,7 +19,7 @@ function CreateTodoButton() {
     setOpenThemeModal(false);
   }
   return (
-    <button className='createTodoButton' onClick={toOpenModal}>
+    <button className={`createTodoButton button_${colorTheme.color} ${colorTheme.mode}`} onClick={toOpenModal}>
       +
     </button>
     )

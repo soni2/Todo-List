@@ -22,7 +22,6 @@ label {
 .todoTitle{
     background-color: #F9FBFC;
     width: calc(100% - 25px);
-    border-color: var(--purple);
     border-radius: 5px;
     font-size: 20px;
     text-align: center;
@@ -32,7 +31,6 @@ label {
 
 .todoDescript {
     background-color: #F9FBFC;
-    border-color: var(--purple);
     border-radius: 5px;
     color: #1E1E1F;
     font-size: 20px;
@@ -41,6 +39,19 @@ label {
     height: 96px;
     width: calc(100% - 25px);
     resize: none;
+}
+
+.inputsAzul{
+    border-color: var(--blue);
+}
+.inputsRojo{
+    border-color: var(--red);
+}
+.inputsMorado{
+    border-color: var(--purple);
+}
+.inputsVerde{
+    border-color: var(--green);
 }
 
 .todoDescript::placeholder {
@@ -72,9 +83,33 @@ textarea:focus {
     border: none;
 }
 
-.TodoForm-button--add {
+.addAzul {
+background: var(--blue);
+box-shadow: 0px 5px 25px  var(--blue);
+color: #fff;
+font-weight: 400;
+}
+.addRojo {
+background: var(--red);
+box-shadow: 0px 5px 25px  var(--red);
+color: #fff;
+font-weight: 400;
+}
+.addMorado {
 background: var(--purple);
-box-shadow: 0px 5px 25px rgba(224, 97, 250, 0.5);
+box-shadow: 0px 5px 25px  var(--purple);
+color: #fff;
+font-weight: 400;
+}
+.addVerde {
+background: var(--green);
+box-shadow: 0px 5px 25px  var(--green);
+color: #fff;
+font-weight: 400;
+}
+.addBlanco {
+background: var(--darkGrey);
+box-shadow: 0px 5px 25px  var(--darkGrey);
 color: #fff;
 font-weight: 400;
 }
