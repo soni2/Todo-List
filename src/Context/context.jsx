@@ -71,14 +71,6 @@ function TodoProvider(props){
         if(event.key === 'Escape'){
         }
       })
-
-      //Cierre de todos los modales al mismo tiempo
-
-      function closeAllModals(){
-        setOpenModal(false)
-        setOpenTodoForm(false)
-        setOpenThemeModal(false)
-      }
       
       //Cambio de tema
       
@@ -114,7 +106,6 @@ function TodoProvider(props){
             openThemeModal,
             setOpenThemeModal,
             colorChange,
-            closeAllModals
         }}>
             {props.children}
         </TodoContext.Provider>

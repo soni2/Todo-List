@@ -16,6 +16,7 @@
 }
 
 .icon-theme{
+    background: url("../img/brocha.svg");
     background-repeat: no-repeat;
     background-position: center;  
     opacity: 50%;

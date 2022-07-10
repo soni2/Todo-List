@@ -35,7 +35,7 @@ function TodoForm() {
     }
   }
 
-  return (
+  return [
     <div className='formContainer' onSubmit={onSubmit}>
         <form>
             <div className='closeContainer'>
@@ -59,8 +59,11 @@ function TodoForm() {
             </div>
             <p className='emptyTodo'>{emptyTodo}</p>
         </form>
-    </div>
-  )
+    </div>,
+    <div 
+    className='closeModals' 
+    onClick={cancelTodo}></div>]
+  
 }
 
 export { TodoForm }
