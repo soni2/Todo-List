@@ -1,5 +1,4 @@
-.FormContainer{
-    width: 90%;
+.formContainer{
     max-width: 300px;
     background-color: #fff;
     padding: 33px 40px;
@@ -81,43 +80,53 @@ textarea:focus {
     height: 48px;
     border-radius: 2px;
     border: none;
+    transition-duration: 0.4s;
 }
 
 .addAzul {
-background: var(--blue);
-box-shadow: 0px 5px 25px  var(--blue);
-color: #fff;
-font-weight: 400;
+    background: var(--blue);
+    color: #fff;
+    font-weight: 400;
 }
 .addRojo {
-background: var(--red);
-box-shadow: 0px 5px 25px  var(--red);
-color: #fff;
-font-weight: 400;
+    background: var(--red);
+    color: #fff;
+    font-weight: 400;
 }
 .addMorado {
-background: var(--purple);
-box-shadow: 0px 5px 25px  var(--purple);
-color: #fff;
-font-weight: 400;
+    background: var(--purple);
+    color: #fff;
+    font-weight: 400;
 }
 .addVerde {
-background: var(--green);
-box-shadow: 0px 5px 25px  var(--green);
-color: #fff;
-font-weight: 400;
+    background: var(--green);
+    color: #fff;
+    font-weight: 400;
 }
 .addBlanco {
-background: var(--darkGrey);
-box-shadow: 0px 5px 25px  var(--darkGrey);
-color: #fff;
-font-weight: 400;
+    background: var(--darkGrey);
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.addAzul:hover {
+    box-shadow: 0px 5px 25px  var(--blue);    
+}
+.addRojo:hover {
+    box-shadow: 0px 5px 25px  var(--red);
+}
+.addMorado:hover {
+    box-shadow: 0px 5px 25px  var(--purple);
+}
+.addVerde:hover {
+    box-shadow: 0px 5px 25px  var(--green);    
+}
+.addBlanco:hover {
+    box-shadow: 0px 5px 25px  var(--darkGrey);
+
 }
 
 .TodoForm-button--cancel {
 background: transparent;
-}
-
-.emptyTodo{
-    color: red;
 }

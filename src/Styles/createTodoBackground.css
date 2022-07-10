@@ -30,3 +30,11 @@
 .addTodoText{
     margin: 0;
 }
+
+@media (max-width: 500px) {
+    .plusSign{
+        font-size: 20px;
+        
+    
+    }    
+}

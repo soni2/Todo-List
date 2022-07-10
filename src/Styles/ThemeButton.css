@@ -16,8 +16,11 @@
 }
 
 .icon-theme{
+    background: url("../img/theme.svg");
+    background-repeat: no-repeat;
     opacity: 50%;
     width: 80%;
+    height: 80%;
     
 }
 .icon-theme:hover{

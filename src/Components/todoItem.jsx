@@ -5,11 +5,10 @@ function TodoItem({text, completed, onComplete, onDelete, title}) {
   const decodingText = decodeURI(text);
 
   return (
-    
     <li className={`itemContainer ${completed&& 'itemContainer--active'}`} key={text}>
       <div className='textContainer'>
         <h2 className={`titulo ${completed&& 'titulo--active'}`}>{`${title}`}</h2>
-        <p className='texto'>{`${decodingText}`}</p>
+        <p className='texto'>{decodingText}</p>
       </div>
       <div className='iconsContainer'>
         <span 

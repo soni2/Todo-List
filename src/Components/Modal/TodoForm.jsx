@@ -36,9 +36,9 @@ function TodoForm() {
   }
 
   return (
-    <div className='FormContainer' onSubmit={onSubmit}>
+    <div className='formContainer' onSubmit={onSubmit}>
         <form>
-            <label>Crea un tarea</label>
+            <label>Crea una tarea</label>
             <input 
             className={`todoTitle inputs${colorTheme.color}`} 
             placeholder='Título'

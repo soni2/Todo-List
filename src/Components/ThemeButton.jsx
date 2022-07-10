@@ -1,6 +1,5 @@
 import React from 'react'
 import '../Styles/ThemeButton.css'
-import theme from "../img/theme.svg"
 import { TodoContext } from '../Context/context'
 
 function ThemeButton() {
@@ -20,7 +19,7 @@ function ThemeButton() {
 
   return (
     <button className='ThemeButton' onClick={toOpenThemeModal}>
-      <img src={theme} alt="Tema" className="icon-theme"/>
+      <span className="icon-theme"/>
     </button>
   )
 }
