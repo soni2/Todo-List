@@ -48,9 +48,14 @@ function AppUI() {
                     )}
             </TodoList>
             {(openModal && openTodoForm) &&
-                <Modal>
-                    <TodoForm/>
-                </Modal>
+                    <Modal>
+                        <div 
+                        className='addTodoModal'
+                        >
+                            <TodoForm/>
+                            <div className='closeModals' onClick={()=>closeAllModals()}></div>]
+                        </div>
+                    </Modal>
             }
             {openThemeModal &&
                 [<ThemeForm/>,
