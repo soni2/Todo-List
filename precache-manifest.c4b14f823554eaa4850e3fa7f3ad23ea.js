@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "be5cf956c4ccd8a381b4",
-    "url": "/Todo-List/static/css/main.254631e9.chunk.css"
+    "revision": "2c2ec4ae965f26a9b85d",
+    "url": "/Todo-List/static/css/main.3a866980.chunk.css"
   },
   {
-    "revision": "be5cf956c4ccd8a381b4",
-    "url": "/Todo-List/static/js/main.be5cf956.chunk.js"
+    "revision": "2c2ec4ae965f26a9b85d",
+    "url": "/Todo-List/static/js/main.2c2ec4ae.chunk.js"
   },
   {
     "revision": "bee36d96ecf68392c5e3",
@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "/Todo-List/static/media/check-color.6ff24850.svg"
   },
   {
+    "revision": "bb47648a2c8a9834426a1736acdc5d1b",
+    "url": "/Todo-List/static/media/trash-red.bb47648a.svg"
+  },
+  {
     "revision": "d80cebf98994d550bfe974d0a6cb83e0",
     "url": "/Todo-List/static/media/trash.d80cebf9.svg"
   },
   {
     "revision": "33c39d441eb5ed79b07aceb963c380bb",
     "url": "/Todo-List/static/media/check-grey.33c39d44.svg"
-  },
-  {
-    "revision": "bb47648a2c8a9834426a1736acdc5d1b",
-    "url": "/Todo-List/static/media/trash-red.bb47648a.svg"
   },
   {
     "revision": "faabd1bb74edfcb80dbc3db37bb2422c",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/Todo-List/static/media/brocha.1798e731.svg"
   },
   {
-    "revision": "b3c1eb952420c3d4f017e1c778507203",
+    "revision": "326801906df8d9f8b7a6ed61537b52ad",
     "url": "/Todo-List/index.html"
   }
 ];
