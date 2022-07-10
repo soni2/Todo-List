@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/Todo-List/static/js/runtime~main.8c9479cc.js"
   },
   {
-    "revision": "33c39d441eb5ed79b07aceb963c380bb",
-    "url": "/Todo-List/static/media/check-grey.33c39d44.svg"
-  },
-  {
     "revision": "6ff248508018868a7a0fc149dac8e842",
     "url": "/Todo-List/static/media/check-color.6ff24850.svg"
+  },
+  {
+    "revision": "33c39d441eb5ed79b07aceb963c380bb",
+    "url": "/Todo-List/static/media/check-grey.33c39d44.svg"
   },
   {
     "revision": "bb47648a2c8a9834426a1736acdc5d1b",
