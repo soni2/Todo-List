@@ -7,15 +7,15 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+    z-index: 11;
 
     }
       
-label {
+.formTitle {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     color: #1E1E1F;
-    margin-bottom: 26px;
     }
     
 .todoTitle{
@@ -76,7 +76,7 @@ textarea:focus {
     font-size: 20px;
     color: #202329;
     font-weight: 400;
-    width: 120px;
+    width: 110px;
     height: 48px;
     border-radius: 2px;
     border: none;
@@ -129,4 +129,34 @@ textarea:focus {
 
 .TodoForm-button--cancel {
 background: transparent;
+}
+
+.closeButton{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    right: 10px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.closeButton:hover{
+    color: var(--red);
+}
+
+.closeContainer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+}
+
+.emptyTodo{
+    color: var(--red);
+    text-align: center;
+    margin:15px 0 0 0;
 }

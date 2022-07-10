@@ -13,7 +13,6 @@ function ThemeButton() {
 
   function toOpenThemeModal(){
     setOpenThemeModal(!openThemeModal)
-    setOpenModal(!openThemeModal)
     setOpenTodoForm(false)
   }
 

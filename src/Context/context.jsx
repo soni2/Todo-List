@@ -11,6 +11,8 @@ function TodoProvider(props){
         loading,
         error
       } = useLocalStorage('TODO_V1', [])
+
+      //Tarea completada
       const completedTodo = (text) =>{
         const todoIndex = todos.findIndex(todo=> todo.text === text);
       
@@ -18,6 +20,9 @@ function TodoProvider(props){
         newTodos[todoIndex].completed = true;
         saveTodo(newTodos);
       }
+
+
+      //Agregar Tarea
       const addTodo = ({title, text}) =>{ 
         const newTodos = [...todos];
         newTodos.push(
@@ -26,6 +31,8 @@ function TodoProvider(props){
           text})
         saveTodo(newTodos);
       }
+
+      //Eliminar tareas
       const deletedTodo = (text) =>{
         const todoIndex = todos.findIndex(todo=> todo.text === text);
       
@@ -33,7 +40,8 @@ function TodoProvider(props){
         newTodos.splice(todoIndex, 1)
         saveTodo(newTodos);
       }
-    
+      
+      //Buscador
       const [searchValue, setSearchValue] = React.useState('')
       let searchedTodo;
     
@@ -41,11 +49,13 @@ function TodoProvider(props){
         searchedTodo = todos;
       } else {
         searchedTodo = todos.filter( todo =>{
-          const todoText = todo.text.toLowerCase();
+          const todoText = todo.title.toLowerCase();
           const searchText = searchValue.toLowerCase();
     
           return todoText.includes(searchText)
         })}
+      
+      //Contadores
       const completedTodos = todos.filter(todo => !!todo.completed).length;
       const totalTodos = todos.length;
 
@@ -66,8 +76,18 @@ function TodoProvider(props){
       })
       
       //Cambio de tema
-      const  [colorTheme, setColorTheme] = React.useState({color:"Morado", theme:"light"});
-
+      
+      const currentColor = JSON.parse(localStorage.getItem("color"));
+      const  [colorTheme, setColorTheme] = React.useState(currentColor);
+      if(!colorTheme){
+        setColorTheme({color: "Morado", mode:"light"});
+      }
+      function colorChange(props){
+        const stringyfiedColor = JSON.stringify(props);
+        console.log(stringyfiedColor)
+        localStorage.setItem("color",stringyfiedColor);
+        setColorTheme(props)
+      }
 
       return (
         <TodoContext.Provider value= {{
@@ -85,11 +105,11 @@ function TodoProvider(props){
             openModal,
             setOpenModal,
             colorTheme,
-            setColorTheme,
             openTodoForm, 
             setOpenTodoForm,
             openThemeModal,
-            setOpenThemeModal
+            setOpenThemeModal,
+            colorChange
         }}>
             {props.children}
         </TodoContext.Provider>

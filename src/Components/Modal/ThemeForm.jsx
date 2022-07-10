@@ -8,31 +8,27 @@ const lightsThemes = ["Azul", "Rojo", "Morado", "Verde", "Blanco"]
 function ThemeForm() {
 
   const {
-    setColorTheme
+    colorChange
   } = React.useContext(TodoContext)
 
   return (
     <div className='themeContainer'>
         <ul>
-            <h3>Claros</h3>
+            {/* {darksThemes.map(tema=>(
+              <li 
+              className={`themeList dark${tema}`} 
+              key={tema}
+              onClick={()=>(setColorTheme({color:tema, mode:"dark"}))} 
+              ></li>
+            ))} */}
             {lightsThemes.map(tema=>(
               <li 
               className={`themeList light${tema}`} 
               key={tema}
-              onClick ={()=>(setColorTheme({color:tema, mode:"light"}))}
-               ><p>{tema}</p></li>
+              onClick ={()=>colorChange({color:tema, mode:"light"})}
+               ></li>
             ))}
         </ul>
-        {/* <ul>
-            <h3>Oscuros</h3>
-            {darksThemes.map(tema=>(
-              <li 
-              className={`themeList light${tema}`} 
-              key={tema}
-              onClick={()=>(setColorTheme({color:tema, mode:"dark"}))} 
-              ><p>{tema}</p></li>
-            ))}
-        </ul> */}
     </div>
   )
 }

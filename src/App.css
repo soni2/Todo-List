@@ -61,3 +61,12 @@ h1 {
   font-weight: 300;
 
 }
+
+.closeModals{
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: 10;
+}

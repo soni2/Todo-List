@@ -22,7 +22,10 @@ function AppUI() {
         loading,
         colorTheme,
         openTodoForm,
-        openThemeModal
+        openThemeModal,
+        setOpenThemeModal,
+        setOpenModal,
+        setOpenTodoForm
     } = React.useContext(TodoContext)
 
     return (
@@ -49,12 +52,18 @@ function AppUI() {
             {(openModal && openTodoForm) &&
                 <Modal>
                     <TodoForm/>
+                    <div className='closeModals' onClick={
+                        ()=>[
+                            setOpenModal(false),
+                            setOpenTodoForm(false)
+                        ]
+                        
+                        }></div>]
                 </Modal>
             }
-            {(openModal && openThemeModal) &&
-                <Modal>
-                    <ThemeForm/>
-                </Modal>
+            {openThemeModal &&
+                [<ThemeForm/>,
+                <div className='closeModals' onClick={()=>(setOpenThemeModal(false))}></div>]
             }
         <ThemeButton/>
         <CreateTodoButton />

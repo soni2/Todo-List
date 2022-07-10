@@ -16,14 +16,16 @@
 }
 
 .icon-theme{
-    background: url("../img/theme.svg");
+    background: url("../img/brocha.svg");
     background-repeat: no-repeat;
+    background-position: center;  
     opacity: 50%;
     width: 80%;
     height: 80%;
+    transition-duration: 0.4s;
+
     
 }
 .icon-theme:hover{
     opacity: 80%;
-    transition-duration: 0.4s;
 }

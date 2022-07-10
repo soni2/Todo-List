@@ -1,30 +1,32 @@
 .themeContainer{
-    background-color: #fff;
+    position: fixed;
+    position: fixed;
+    bottom: 17vh;
+    right: 4.5vw;
     max-width: 900px;
+    min-width: 40px;
     display: flex;
-    padding: 30px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 25px 5px;
+    padding: 0;
     border-radius: 10px;
+    z-index: 11;
 }
 
 .themeContainer ul{
-    margin: 20px 5px;
+    margin: 15px 0px 50px;
     display: flex;
 }
 
 .themeList{
-    padding: 1px 50px;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
     margin: 3px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: 0.4s
-}
-.themeList:hover{
-    font-weight: bold;
-
 }
 
 .lightAzul{
