@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d9102299ed6b805bcc2c",
-    "url": "/taskmng2/static/css/main.04b7a2a6.chunk.css"
+    "revision": "3247450f75c8dba1efb2",
+    "url": "/taskmng2/static/css/main.41431935.chunk.css"
   },
   {
-    "revision": "d9102299ed6b805bcc2c",
-    "url": "/taskmng2/static/js/main.d9102299.chunk.js"
+    "revision": "3247450f75c8dba1efb2",
+    "url": "/taskmng2/static/js/main.3247450f.chunk.js"
   },
   {
     "revision": "bee36d96ecf68392c5e3",
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "/taskmng2/static/media/addTodo.faabd1bb.svg"
   },
   {
-    "revision": "4fa9364e4ef0aacca9f16eca2fc92a7a",
-    "url": "/taskmng2/static/media/theme.4fa9364e.svg"
+    "revision": "1798e731198335e7acb0453ad71d5988",
+    "url": "/taskmng2/static/media/brocha.1798e731.svg"
   },
   {
-    "revision": "d56f42199c309f079464108852a4d61d",
+    "revision": "c8ae818e2f589975ed049e670ae7dc20",
     "url": "/taskmng2/index.html"
   }
 ];
