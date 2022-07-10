@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ec5ac3bb6eee4e1cb12e",
-    "url": "/Todo-List/static/css/main.19a6df6d.chunk.css"
+    "revision": "56c79923fc27c83a29d0",
+    "url": "/Todo-List/static/css/main.c5e9a1b9.chunk.css"
   },
   {
-    "revision": "ec5ac3bb6eee4e1cb12e",
-    "url": "/Todo-List/static/js/main.ec5ac3bb.chunk.js"
+    "revision": "56c79923fc27c83a29d0",
+    "url": "/Todo-List/static/js/main.56c79923.chunk.js"
   },
   {
     "revision": "bee36d96ecf68392c5e3",
@@ -20,6 +20,10 @@ self.__precacheManifest = [
     "url": "/Todo-List/static/media/check-grey.33c39d44.svg"
   },
   {
+    "revision": "d80cebf98994d550bfe974d0a6cb83e0",
+    "url": "/Todo-List/static/media/trash.d80cebf9.svg"
+  },
+  {
     "revision": "6ff248508018868a7a0fc149dac8e842",
     "url": "/Todo-List/static/media/check-color.6ff24850.svg"
   },
@@ -28,19 +32,11 @@ self.__precacheManifest = [
     "url": "/Todo-List/static/media/trash-red.bb47648a.svg"
   },
   {
-    "revision": "d80cebf98994d550bfe974d0a6cb83e0",
-    "url": "/Todo-List/static/media/trash.d80cebf9.svg"
-  },
-  {
     "revision": "faabd1bb74edfcb80dbc3db37bb2422c",
     "url": "/Todo-List/static/media/addTodo.faabd1bb.svg"
   },
   {
-    "revision": "1798e731198335e7acb0453ad71d5988",
-    "url": "/Todo-List/static/media/brocha.1798e731.svg"
-  },
-  {
-    "revision": "31297389c770db61ab051ef3edabdc76",
+    "revision": "b20c449c0c4e823f6d551800cb65aca5",
     "url": "/Todo-List/index.html"
   }
 ];
