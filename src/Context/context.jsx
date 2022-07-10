@@ -69,11 +69,16 @@ function TodoProvider(props){
 
       document.addEventListener('keydown', function(event){ 
         if(event.key === 'Escape'){
-          setOpenModal(false)
-          setOpenTodoForm(false)
-          setOpenThemeModal(false)
         }
       })
+
+      //Cierre de todos los modales al mismo tiempo
+
+      function closeAllModals(){
+        setOpenModal(false)
+        setOpenTodoForm(false)
+        setOpenThemeModal(false)
+      }
       
       //Cambio de tema
       
@@ -84,7 +89,6 @@ function TodoProvider(props){
       }
       function colorChange(props){
         const stringyfiedColor = JSON.stringify(props);
-        console.log(stringyfiedColor)
         localStorage.setItem("color",stringyfiedColor);
         setColorTheme(props)
       }
@@ -109,7 +113,8 @@ function TodoProvider(props){
             setOpenTodoForm,
             openThemeModal,
             setOpenThemeModal,
-            colorChange
+            colorChange,
+            closeAllModals
         }}>
             {props.children}
         </TodoContext.Provider>
