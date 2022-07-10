@@ -7,7 +7,6 @@ function ThemeButton() {
   const {
     openThemeModal,
     setOpenThemeModal,
-    setOpenModal,
     setOpenTodoForm
   } = React.useContext(TodoContext);
 
