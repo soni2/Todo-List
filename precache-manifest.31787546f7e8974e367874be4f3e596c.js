@@ -20,16 +20,16 @@ self.__precacheManifest = [
     "url": "/taskmng2/static/media/check-color.6ff24850.svg"
   },
   {
-    "revision": "33c39d441eb5ed79b07aceb963c380bb",
-    "url": "/taskmng2/static/media/check-grey.33c39d44.svg"
+    "revision": "bb47648a2c8a9834426a1736acdc5d1b",
+    "url": "/taskmng2/static/media/trash-red.bb47648a.svg"
   },
   {
     "revision": "d80cebf98994d550bfe974d0a6cb83e0",
     "url": "/taskmng2/static/media/trash.d80cebf9.svg"
   },
   {
-    "revision": "bb47648a2c8a9834426a1736acdc5d1b",
-    "url": "/taskmng2/static/media/trash-red.bb47648a.svg"
+    "revision": "33c39d441eb5ed79b07aceb963c380bb",
+    "url": "/taskmng2/static/media/check-grey.33c39d44.svg"
   },
   {
     "revision": "faabd1bb74edfcb80dbc3db37bb2422c",

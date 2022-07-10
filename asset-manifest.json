@@ -6,11 +6,11 @@
   "static/js/1.bee36d96.chunk.js.map": "/taskmng2/static/js/1.bee36d96.chunk.js.map",
   "runtime~main.js": "/taskmng2/static/js/runtime~main.42097e41.js",
   "runtime~main.js.map": "/taskmng2/static/js/runtime~main.42097e41.js.map",
-  "static/media/todoItem.css": "/taskmng2/static/media/trash-red.bb47648a.svg",
+  "static/media/todoItem.css": "/taskmng2/static/media/check-grey.33c39d44.svg",
   "static/media/createTodoBackground.css": "/taskmng2/static/media/addTodo.faabd1bb.svg",
   "static/media/ThemeButton.css": "/taskmng2/static/media/brocha.1798e731.svg",
   "static/css/main.41431935.chunk.css.map": "/taskmng2/static/css/main.41431935.chunk.css.map",
   "index.html": "/taskmng2/index.html",
-  "precache-manifest.3c26db8c930b0b9fabb77778bb1921f2.js": "/taskmng2/precache-manifest.3c26db8c930b0b9fabb77778bb1921f2.js",
+  "precache-manifest.31787546f7e8974e367874be4f3e596c.js": "/taskmng2/precache-manifest.31787546f7e8974e367874be4f3e596c.js",
   "service-worker.js": "/taskmng2/service-worker.js"
 }
