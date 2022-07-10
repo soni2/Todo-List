@@ -4,7 +4,9 @@ function Modal({children}){
 
     return ReactDOM.createPortal (
     
-    children,
+        <div 
+        className='addTodoModal'
+        >{children}</div>,
     document.getElementById("modal"))
 }
 
