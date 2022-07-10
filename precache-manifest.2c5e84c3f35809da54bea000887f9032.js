@@ -1,31 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "86d878c9433f785948ff",
-    "url": "/taskmng2/static/css/main.887846bd.chunk.css"
+    "revision": "d9102299ed6b805bcc2c",
+    "url": "/taskmng2/static/css/main.04b7a2a6.chunk.css"
   },
   {
-    "revision": "86d878c9433f785948ff",
-    "url": "/taskmng2/static/js/main.86d878c9.chunk.js"
+    "revision": "d9102299ed6b805bcc2c",
+    "url": "/taskmng2/static/js/main.d9102299.chunk.js"
   },
   {
-    "revision": "d655ce1cf88952e278a0",
-    "url": "/taskmng2/static/js/1.d655ce1c.chunk.js"
+    "revision": "bee36d96ecf68392c5e3",
+    "url": "/taskmng2/static/js/1.bee36d96.chunk.js"
   },
   {
     "revision": "42097e413bb1975685ff",
     "url": "/taskmng2/static/js/runtime~main.42097e41.js"
   },
   {
-    "revision": "4fa9364e4ef0aacca9f16eca2fc92a7a",
-    "url": "/taskmng2/static/media/theme.4fa9364e.svg"
+    "revision": "33c39d441eb5ed79b07aceb963c380bb",
+    "url": "/taskmng2/static/media/check-grey.33c39d44.svg"
   },
   {
     "revision": "6ff248508018868a7a0fc149dac8e842",
     "url": "/taskmng2/static/media/check-color.6ff24850.svg"
-  },
-  {
-    "revision": "33c39d441eb5ed79b07aceb963c380bb",
-    "url": "/taskmng2/static/media/check-grey.33c39d44.svg"
   },
   {
     "revision": "bb47648a2c8a9834426a1736acdc5d1b",
@@ -40,7 +36,11 @@ self.__precacheManifest = [
     "url": "/taskmng2/static/media/addTodo.faabd1bb.svg"
   },
   {
-    "revision": "a83ee8847bccf683803f040cd60ff1a9",
+    "revision": "4fa9364e4ef0aacca9f16eca2fc92a7a",
+    "url": "/taskmng2/static/media/theme.4fa9364e.svg"
+  },
+  {
+    "revision": "d56f42199c309f079464108852a4d61d",
     "url": "/taskmng2/index.html"
   }
 ];
