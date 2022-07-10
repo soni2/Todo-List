@@ -1,16 +1,16 @@
 {
-  "main.css": "/Todo-List/static/css/main.3a866980.chunk.css",
-  "main.js": "/Todo-List/static/js/main.2c2ec4ae.chunk.js",
-  "main.js.map": "/Todo-List/static/js/main.2c2ec4ae.chunk.js.map",
+  "main.css": "/Todo-List/static/css/main.57f1288b.chunk.css",
+  "main.js": "/Todo-List/static/js/main.1e8a558e.chunk.js",
+  "main.js.map": "/Todo-List/static/js/main.1e8a558e.chunk.js.map",
   "static/js/1.bee36d96.chunk.js": "/Todo-List/static/js/1.bee36d96.chunk.js",
   "static/js/1.bee36d96.chunk.js.map": "/Todo-List/static/js/1.bee36d96.chunk.js.map",
   "runtime~main.js": "/Todo-List/static/js/runtime~main.8c9479cc.js",
   "runtime~main.js.map": "/Todo-List/static/js/runtime~main.8c9479cc.js.map",
-  "static/media/todoItem.css": "/Todo-List/static/media/trash-red.bb47648a.svg",
+  "static/media/todoItem.css": "/Todo-List/static/media/trash.d80cebf9.svg",
   "static/media/createTodoBackground.css": "/Todo-List/static/media/addTodo.faabd1bb.svg",
   "static/media/ThemeButton.css": "/Todo-List/static/media/brocha.1798e731.svg",
-  "static/css/main.3a866980.chunk.css.map": "/Todo-List/static/css/main.3a866980.chunk.css.map",
+  "static/css/main.57f1288b.chunk.css.map": "/Todo-List/static/css/main.57f1288b.chunk.css.map",
   "index.html": "/Todo-List/index.html",
-  "precache-manifest.744a9bfaf0e3dc1a7e285d2caf44102a.js": "/Todo-List/precache-manifest.744a9bfaf0e3dc1a7e285d2caf44102a.js",
+  "precache-manifest.817e186ceac2f17f975a14cd75b97933.js": "/Todo-List/precache-manifest.817e186ceac2f17f975a14cd75b97933.js",
   "service-worker.js": "/Todo-List/service-worker.js"
 }
