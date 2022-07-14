@@ -7,12 +7,15 @@ function ThemeButton() {
   const {
     openThemeModal,
     setOpenThemeModal,
-    setOpenTodoForm
+    setOpenTodoForm,
+    setOpenEditModal
   } = React.useContext(TodoContext);
 
   function toOpenThemeModal(){
     setOpenThemeModal(!openThemeModal)
     setOpenTodoForm(false)
+    setOpenEditModal(false)
+
   }
 
   return (

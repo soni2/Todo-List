@@ -10,13 +10,15 @@ function CreateTodoButton() {
     setOpenTodoForm,
     openTodoForm,
     setOpenThemeModal,
-    colorTheme
+    colorTheme,
+    setOpenEditModal
   } = React.useContext(TodoContext)
 
   function toOpenModal(){
     setOpenModal(!openTodoForm);
     setOpenTodoForm(!openTodoForm);
     setOpenThemeModal(false);
+    setOpenEditModal(false)
   }
   return (
     <button className={`createTodoButton button_${colorTheme.color} ${colorTheme.mode}`} onClick={toOpenModal}>

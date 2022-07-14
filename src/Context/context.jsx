@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import { useLocalStorage } from './useLocalStorage'
 
 
@@ -17,7 +18,7 @@ function TodoProvider(props){
         const todoIndex = todos.findIndex(todo=> todo.text === text);
       
         const newTodos = [...todos];
-        newTodos[todoIndex].completed = true;
+        newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
         saveTodo(newTodos);
       }
 
@@ -29,6 +30,20 @@ function TodoProvider(props){
           {completed: false,
           title,
           text})
+        saveTodo(newTodos);
+      }
+
+      //Editar Tarea
+      const [editTextValue, setEditTextValue] = useState('')
+      const [editTitleValue, setEditTitleValue] = useState('')
+
+      const editTodo = ({title, text}) =>{
+        const todoIndex = todos.findIndex(todo=> todo.text === editTextValue && todo.title === editTitleValue);
+
+        const newTodos = [...todos];
+
+        newTodos[todoIndex].text = text;
+        newTodos[todoIndex].title = title;
         saveTodo(newTodos);
       }
 
@@ -64,6 +79,7 @@ function TodoProvider(props){
       const [openModal, setOpenModal] = React.useState(false);
       const [openTodoForm, setOpenTodoForm] = React.useState(false);
       const [openThemeModal, setOpenThemeModal] = React.useState(false);
+      const [openEditModal, setOpenEditModal] = React.useState(false);
       
       //Para cerrar el modal con la tecla ESC
 
@@ -78,6 +94,7 @@ function TodoProvider(props){
         setOpenModal(false)
         setOpenTodoForm(false)
         setOpenThemeModal(false)
+        setOpenEditModal(false)
       }
       
       //Cambio de tema
@@ -114,7 +131,14 @@ function TodoProvider(props){
             openThemeModal,
             setOpenThemeModal,
             colorChange,
-            closeAllModals
+            closeAllModals,
+            openEditModal, 
+            setOpenEditModal,
+            editTextValue,
+            setEditTextValue,
+            editTitleValue,
+            setEditTitleValue,
+            editTodo
         }}>
             {props.children}
         </TodoContext.Provider>

@@ -11,6 +11,7 @@ import LoadingSkeleton from './LoadingSkeleton'
 import {CreateTodoBackground} from './CreateTodoBackground'
 import { ThemeButton } from './ThemeButton'
 import ThemeForm from './Modal/ThemeForm'
+import { EditTodoForm } from './Modal/EditTodoForm'
 
 function AppUI() {
 
@@ -23,7 +24,8 @@ function AppUI() {
         colorTheme,
         openTodoForm,
         openThemeModal,
-        closeAllModals
+        closeAllModals,
+        openEditModal
     } = React.useContext(TodoContext)
 
     return (
@@ -50,6 +52,11 @@ function AppUI() {
             {(openModal && openTodoForm) &&
                     <Modal>
                         <TodoForm/>
+                    </Modal>
+            }
+            {(openModal && openEditModal) &&
+                    <Modal>
+                        <EditTodoForm/>
                     </Modal>
             }
             {openThemeModal &&
